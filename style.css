@@ -1,61 +1,62 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Roboto; 
-    text-decoration: none; 
-    background-color: azure;
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-family: Roboto;
+ text-decoration: none;
+ background-color: azure;
 }
 
 
 html {
-    width: 375px;
+ width: 375px;
 }
 
 
 li {
-    list-style:  none; 
-    padding: 0.5rem ;
+ list-style: none;
+ padding: 0.5rem;
 }
 
 
 .color {
-    color: #6070FF;;
+ color: #6070FF;
 }
 
 
 .flex {
-    display: flex;
+display: flex;
 }
-                                
+
+
 button {
-    background-color: transparent;
-    border: none;
-    outline: none;
-}              
+ background-color: transparent;
+ border: none;
+ outline: none;
+}
 
-
-       /*HEADER  */
+/*HEADER  */
 .header {
-justify-content: space-between;
-align-items: center;
+ justify-content: space-between;
+ align-items: center;
 margin: 2rem 1rem;
 }
 
+
 .header a {
-    font-size: 1.5rem;
+font-size: 1.5rem;
 }
 
 
 .menu {
-justify-content: space-between;
+ justify-content: space-between;
 }
 
-                                  /* INTRODUCTION */
+/* INTRODUCTION */
 .intro-text {
-    flex-direction: column;
-    margin-top: 6rem;
-    padding: 1rem 5rem;    
+flex-direction: column;
+margin-top: 6rem;
+padding: 1rem 5rem;
 }
 
 
@@ -72,8 +73,8 @@ padding-bottom: 1.4rem;
 margin: 1rem 5rem;
 }
 
-.icon {
-    width: 1.6em;
-    padding-top: 0.4rem;
-}
 
+.icon {
+width: 1.6em;
+padding-top: 0.4rem;
+}
