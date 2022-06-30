@@ -1,56 +1,79 @@
 * {
-    padding: 8px ;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Roboto;
-    font-size: 25px;
+    font-family: Roboto; 
+    text-decoration: none; 
+    background-color: azure;
+}
+
+
+html {
+    width: 375px;
 }
 
 
 li {
-    list-style:  none;
-    
+    list-style:  none; 
+    padding: 0.5rem ;
 }
+
 
 .color {
-    color: #d48a09;
-}
-
-#logo {
-    width: 100px;
+    color: #6070FF;;
 }
 
 
-.header-text {
+.flex {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 5rem;
-    flex-wrap: wrap;
-
 }
+                                
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}              
+
+
+       /*HEADER  */
+.header {
+justify-content: space-between;
+align-items: center;
+margin: 2rem 1rem;
+}
+
+.header a {
+    font-size: 1.5rem;
+}
+
+
+.menu {
+justify-content: space-between;
+}
+
+                                  /* INTRODUCTION */
+.intro-text {
+    flex-direction: column;
+    margin-top: 6rem;
+    padding: 1rem 5rem;    
+}
+
 
 .text {
-font-size: 80px;
+font-size: 1.3rem;
 font-weight: 700;
-line-height: 105px;
+line-height: 1.2rem;
 letter-spacing: 0em;
-}
-
-.header-text h3 {
-    font-size: 40px;
+padding-bottom: 1.4rem;
 }
 
 
-.header-text p {
-    width: 30rem;
+.links {
+margin: 1rem 5rem;
 }
 
-.skill {
-display: flex;
-width: 16rem;
-/* padding: 5rem 16rem; */
-justify-content: space-between;
-border: 2px black solid;
+.icon {
+    width: 1.6em;
+    padding-top: 0.4rem;
 }
 
