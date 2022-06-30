@@ -1,11 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
-  background-color: #f7f7f9;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  background-color: transparent;
+
 }
 
 html {
@@ -18,16 +22,15 @@ li {
   padding-right: 12px;
 }
 
+.container {
+  background-image: url(images/headershapesmobile1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 584px;
+}
+
 .color {
   color: #6070ff;
-}
-
-.pos {
-  position: relative;
-}
-
-.flex {
-  display: flex;
 }
 
 button {
@@ -38,6 +41,7 @@ button {
 
 /* HEADER  */
 .header {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px;
@@ -49,48 +53,17 @@ button {
   font-size: 24px;
 }
 
-.logo {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 20px;
-}
-
-.logo:hover {
-  font-weight: 900;
+.header a:hover {
   font-size: 30px;
   color: chocolate;
 }
 
-button:hover {
-  font-size: 30px;
-}
-
 /* INTRODUCTION */
-#ell2 {
-  left: 327px;
-}
-
-#ell1 {
-  right: -72px;
-  top: -12px;
-  background-color: transparent;
-}
-
-#rect1 {
-  right: -77px;
-  top: -28px;
-  background-color: transparent;
-}
-
-#ell3 {
-  background-color: transparent;
-  left: -32px;
-}
-
 .intro-text {
+  display: flex;
   flex-direction: column;
   padding: 12px 30px;
+  margin-top: 70px;
 }
 
 .text {
@@ -98,32 +71,30 @@ button:hover {
   font-weight: 700;
   line-height: 20px;
   padding-bottom: 19px;
+  color: #172b4d;
 }
 
 .para {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  color: #344563;
+}
+
+.links p {
+  color: #7F8CFF;
+  font-weight: 400;
 }
 
 .links {
   margin: 14px 30px;
 }
 
-.media {
-  width: 20px;
-  height: 20px;
+.socialmedia {
+  display: flex;
 }
 
 .icon {
-  width: 23px;
-}
-
-#ellipse1 {
-  transform: rotate(130deg);
-  left: -30px;
-}
-
-#ellipse2 {
-  left: 304px;
+  font-size: 25px;
+  color: black;
 }
