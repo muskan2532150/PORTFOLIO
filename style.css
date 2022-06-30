@@ -110,6 +110,11 @@ button:hover {
   margin: 14px 30px;
 }
 
+.media {
+  width: 20px;
+height: 20px;
+}
+
 .icon {
   width: 23px;
 }
