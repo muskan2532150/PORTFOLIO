@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Times New Roman', Times, serif;
   text-decoration: none;
-  background-color: azure;
+  background-color: #f7f7f9;
 }
 
 html {
@@ -13,11 +14,16 @@ html {
 
 li {
   list-style: none;
-  padding: 0.5rem;
+  padding-top: 10px;
+  padding-right: 12px;
 }
 
 .color {
   color: #6070ff;
+}
+
+.pos {
+  position: relative;
 }
 
 .flex {
@@ -34,36 +40,86 @@ button {
 .header {
   justify-content: space-between;
   align-items: center;
-  margin: 2rem 1rem;
+  margin: 10px;
+  padding: 12px;
+  text-align: center;
 }
 
 .header a {
-  font-size: 1.5rem;
+  font-size: 24px;
 }
 
-.menu {
-  justify-content: space-between;
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.logo:hover {
+  font-weight: 900;
+  font-size: 30px;
+  color: chocolate;
+}
+
+button:hover {
+  font-size: 30px;
 }
 
 /* INTRODUCTION */
+#ell2 {
+  left: 327px;
+}
+
+#ell1 {
+  right: -72px;
+  top: -12px;
+  background-color: transparent;
+}
+
+#rect1 {
+  right: -77px;
+  top: -28px;
+  background-color: transparent;
+}
+
+#ell3 {
+  background-color: transparent;
+  left: -32px;
+}
+
 .intro-text {
   flex-direction: column;
-  margin-top: 6rem;
-  padding: 1rem 5rem;
+  padding: 12px 30px;
 }
 
 .text {
-  font-size: 1.3rem;
+  font-size: 32px;
   font-weight: 700;
-  line-height: 1.2rem;
-  padding-bottom: 1.4rem;
+  line-height: 20px;
+  padding-bottom: 19px;
+}
+
+.para {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .links {
-  margin: 1rem 5rem;
+  margin: 14px 30px;
 }
 
 .icon {
-  width: 1.6em;
-  padding-top: 0.4rem;
+  width: 23px;
+  ;
+}
+
+#ellipse1 {
+  transform: rotate(130deg);
+  left: -30px;
+}
+
+#ellipse2 {
+  left: 304px;
 }
