@@ -5,11 +5,9 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
-  background-color: #ffffff;
+  background-color: transparent;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  background-color: transparent;
-
 }
 
 html {
@@ -82,7 +80,7 @@ button {
 }
 
 .links p {
-  color: #7F8CFF;
+  color: #7f8cff;
   font-weight: 400;
 }
 
