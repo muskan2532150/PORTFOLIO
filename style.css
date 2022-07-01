@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 * {
   padding: 0;
@@ -14,7 +14,8 @@ html {
   width: 375px;
 }
 
-li {
+.container li,
+.myself li {
   list-style: none;
   padding-top: 10px;
   padding-right: 12px;
@@ -31,7 +32,7 @@ li {
   color: #6070ff;
 }
 
-button {
+.container button {
   background-color: transparent;
   border: none;
   outline: none;
@@ -92,7 +93,142 @@ button {
   display: flex;
 }
 
-.icon {
+.icon,
+i {
   font-size: 25px;
-  color: black;
+  color: rgb(43, 2, 97);
 }
+
+/* Works */
+.grid-container {
+  background-color: #e5e5e5;
+  display: grid;
+  grid: auto auto auto auto / 100%;
+  grid-row-gap: 10px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 12px;
+  border: 1px solid #dfe1e6;
+  background-color: #fff;
+  height: 481px;
+  margin: 20px;
+  border-radius: 22px;
+  font-weight: 600;
+}
+
+.cards ul {
+  display: flex;
+}
+
+.card-title {
+  font-weight: 700;
+  color: #172b4d;
+}
+
+.card-text {
+  display: flex;
+}
+
+.card-text h6 {
+  font-size: 13px;
+  color: #344563;
+  padding-right: 32px;
+}
+
+.card-text li {
+  list-style: disc;
+  font-size: 13px;
+  color: #7a869a;
+  padding-right: 28px;
+  margin-bottom: 12px;
+}
+
+.list {
+  list-style: none;
+  font-size: 12px;
+  padding: 4px 12px;
+  color: #6070ff;
+  background: #ebebff;
+  border-radius: 8px;
+  text-align: center;
+  margin-right: 8px;
+  margin-top: 12px;
+}
+
+.btn,
+.myself button {
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  width: 124px;
+  height: 48px;
+  color: #396df2;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 11px;
+}
+
+.myself {
+  background: #FFFFFF;
+  height: 855px;
+  padding: 12px;
+  margin: 12px;
+  padding-top: 45px;
+}
+
+.myself h1 {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  padding-bottom: 12px;
+}
+
+.myself p {
+  color: #344563;
+  padding-bottom: 8px;
+}
+
+.myself button {
+  width: 164px;
+}
+
+.language h4,
+.myself_ul li {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  padding-bottom: 12px;
+}
+
+.language li {
+  color: #253858;
+  list-style: none;
+  background: #F7F7F9;
+  border-radius: 8px;
+  width: 303px;
+  height: 66.72px;
+  margin-bottom: 12px;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.language i {
+  padding: 10px 31px;
+  font-size: 35px;
+}
+
+.myself_ul {
+  padding-top: 25px;
+}
+
+
+hr {
+  background: #DFE1E6;
+}
+
+
