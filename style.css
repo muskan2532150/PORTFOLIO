@@ -172,7 +172,7 @@ i {
 }
 
 .myself {
-  background: #FFFFFF;
+  background: #fff;
   height: 855px;
   padding: 12px;
   margin: 12px;
@@ -207,7 +207,7 @@ i {
 .language li {
   color: #253858;
   list-style: none;
-  background: #F7F7F9;
+  background: #f7f7f9;
   border-radius: 8px;
   width: 303px;
   height: 66.72px;
@@ -226,9 +226,6 @@ i {
   padding-top: 25px;
 }
 
-
 hr {
-  background: #DFE1E6;
+  background: #dfe1e6;
 }
-
-
