@@ -80,7 +80,8 @@ html {
   color: #344563;
 }
 
-.links p {
+.links h4,
+.myself h4 {
   color: #7f8cff;
   font-weight: 400;
 }
@@ -89,14 +90,18 @@ html {
   margin: 14px 30px;
 }
 
+.connect {
+  margin-top: 8px;
+}
+
 .socialmedia {
   display: flex;
 }
 
 .icon,
-i {
+.language img {
   font-size: 25px;
-  color: rgb(43, 2, 97);
+  color: #505f79;
 }
 
 /* Works */
@@ -114,7 +119,7 @@ i {
   gap: 12px;
   border: 1px solid #dfe1e6;
   background-color: #fff;
-  height: 481px;
+  height: 94%;
   margin: 20px;
   border-radius: 22px;
   font-weight: 600;
@@ -163,12 +168,26 @@ i {
 .myself button {
   border: 1px solid #6070ff;
   border-radius: 8px;
-  width: 124px;
-  height: 48px;
+  width: 48%;
+  height: 10%;
   color: #396df2;
   text-align: center;
   font-size: 16px;
-  margin-top: 11px;
+  margin-top: 16px;
+}
+
+.btn:hover,
+.myself button:hover {
+  background: #6070ff;
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  border-radius: 8px;
+  color: #fff;
+}
+
+.btn:active,
+.myself button:active {
+  background: #2230d2;
+  border-radius: 8px;
 }
 
 .myself {
@@ -176,10 +195,12 @@ i {
   height: 855px;
   padding: 12px;
   margin: 12px;
-  padding-top: 45px;
+  padding-top: 65px;
+  display: flex;
+  flex-direction: column;
 }
 
-.myself h1 {
+.myself h2 {
   color: #172b4d;
   font-weight: 700;
   font-size: 40px;
@@ -193,7 +214,8 @@ i {
 }
 
 .myself button {
-  width: 164px;
+  width: 48%;
+  height: 81%;
 }
 
 .language h4,
@@ -201,7 +223,13 @@ i {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  padding-bottom: 12px;
+  padding-bottom: 17px;
+}
+
+.myself_ul_li {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 32px !important;
 }
 
 .language li {
@@ -217,13 +245,17 @@ i {
   font-weight: 600;
 }
 
-.language i {
-  padding: 10px 31px;
-  font-size: 35px;
+.language img {
+  padding: 9px 15px;
 }
 
 .myself_ul {
   padding-top: 25px;
+  color: #000;
+}
+
+.myself_ul h4 {
+  color: #000;
 }
 
 hr {
