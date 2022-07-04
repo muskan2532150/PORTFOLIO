@@ -124,10 +124,10 @@ html {
   border-radius: 22px;
   font-weight: 600;
 }
-
+/* 
 .cards ul {
   display: flex;
-}
+} */
 
 .card-title {
   font-weight: 700;
@@ -150,6 +150,7 @@ html {
   color: #7a869a;
   padding-right: 28px;
   margin-bottom: 12px;
+  float: left;
 }
 
 .list {
