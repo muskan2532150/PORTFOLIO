@@ -179,11 +179,10 @@
         <h2>Contact me</h2>
         <p>If you have an application you are interested in developing, a feature that you need built or a project that
             needs coding. I’d love to help with it </p>
-        <form action="/" method="get">
-            <input type="text" id="fname" name="fname" placeholder="Name" required maxlength="20"  class="form"><br><br>
-            <input type="email" id="email" name="email" placeholder="Email" required class="form"><br><br>
-            <textarea id="w3review" name="w3review" rows="10" cols="50" placeholder="Write your message here"></textarea>
-            <br>
+        <form action="https://formspree.io/f/mvoljzyb" method="post">
+            <input type="text" id="name" name="name" placeholder="Name" required maxlength="30"  class="form">
+            <input type="email" id="email" name="email" placeholder="Email" required class="form">
+            <textarea id="review" name="review" rows="10" cols="50" maxlength="500" placeholder="Write your message here" required></textarea>
             <input type="submit" value="Get It Touch" id="submit">
         </form>
     </section>

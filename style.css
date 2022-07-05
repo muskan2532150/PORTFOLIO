@@ -184,23 +184,24 @@ html {
 /* Contact form button */
 #submit {
   width: 110px;
-  float: left;
   font-size: 17px;
   line-height: 24px;
   color: #6070ff;
+  background: #fff;
+  border: 1px solid #7f8cff;
+  border-radius: 8px;
 }
 
 .btn:hover,
 #submit:hover,
 .myself button:hover {
-  background: hsl(234, 100%, 69%);
+  background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
   color: #fff;
 }
 
 .btn:active,
-#submit:active,
 .myself button:active {
   background: #2230d2;
   border-radius: 8px;
@@ -280,7 +281,7 @@ hr {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-image: url(images/contactbg.png);
+  background-image: url(images/contact.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -292,6 +293,7 @@ hr {
   color: #fff;
   margin-top: 74px;
   padding: 11px;
+  padding-right: 31px;
 }
 
 .contact p {
@@ -301,19 +303,23 @@ hr {
   text-align: center;
   color: #ebebff;
   margin: 16px 30px;
+  padding-top: 21px;
 }
 
 .contact form {
   margin: 24px;
+  display: flex;
+  flex-direction: column
 }
 
 .contact input,
-.form {
+.form,
+.contact textarea {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 5px;
   padding: 4px;
-  width: 329px;
+  margin: 10px;
 }
 
 .form:valid {
@@ -325,7 +331,5 @@ hr {
 }
 
 .contact textarea {
-  background: #fff;
-  border: 1px solid #cfd8dc;
   border-radius: 8px;
 }
