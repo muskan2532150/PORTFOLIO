@@ -309,7 +309,7 @@ hr {
 .contact form {
   margin: 24px;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
 
 .contact input,
