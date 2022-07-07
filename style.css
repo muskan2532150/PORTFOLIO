@@ -8,6 +8,7 @@
   background-color: transparent;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
+  scroll-behavior: smooth;
 }
 
 .container li,
@@ -52,16 +53,17 @@
 
 .header a:hover {
   font-size: 24px;
+  transition: transform 2s;
+  animation-name: circle;
+  animation-duration: 4s;
 }
 
-.nav-menu {
-  visibility: hidden;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  align-items: center;
-  text-align: center;
-  color: #344563;
+@keyframes circle {
+  0% { transform: rotate(30deg);}
+  25% {transform: rotate(90deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(265deg);}
+  100% {transform: rotate(360deg);}
 }
 
 /* INTRODUCTION */
@@ -133,6 +135,13 @@
   font-weight: 600;
 }
 
+.cards img:hover,
+.cards-rev img:hover {
+  transform: scale(0.9);
+  transition: transform 3s;
+  transition-timing-function: ease-in-out;
+}
+
 .cards ul,
 .cards-rev ul {
   display: flex;
@@ -177,12 +186,13 @@
 .myself button {
   border: 1px solid #6070ff;
   border-radius: 8px;
-  width: 48%;
+  width: 35%;
   height: 17%;
   color: #396df2;
   text-align: center;
   font-size: 16px;
   margin-top: 16px;
+  transition: background 3s;
 }
 
 .one-div {
@@ -190,7 +200,7 @@
 }
 
 .myself button {
-  width: 40%;
+  width: 23%;
   height: 80%;
 }
 
@@ -305,6 +315,10 @@ hr {
   margin-top: 74px;
   padding: 11px;
   padding-right: 31px;
+}
+
+.contact h2:hover {
+  transform: translateX(-10px);
 }
 
 .contact p {
@@ -475,7 +489,7 @@ hr {
   }
 
   .contact {
-    margin-top: 45px;
+    margin-top: 60px;
   }
 
   .contact p {
