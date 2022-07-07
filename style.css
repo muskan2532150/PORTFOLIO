@@ -10,10 +10,6 @@
   font-style: normal;
 }
 
-html {
-  width: 375px;
-}
-
 .container li,
 .myself li {
   list-style: none;
@@ -22,7 +18,7 @@ html {
 }
 
 .container {
-  background-image: url(images/headershapesmobile1.png);
+  background-image: url(images/Headerbg.svg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 584px;
@@ -36,6 +32,7 @@ html {
   background-color: transparent;
   border: none;
   outline: none;
+  visibility: visible;
 }
 
 /* HEADER  */
@@ -45,16 +42,26 @@ html {
   align-items: center;
   margin: 10px;
   padding: 12px;
-  text-align: center;
+  text-align: right;
 }
 
 .header a {
-  font-size: 24px;
+  font-size: 21px;
+  padding-right: 6px;
 }
 
 .header a:hover {
-  font-size: 30px;
-  color: chocolate;
+  font-size: 24px;
+}
+
+.nav-menu {
+  visibility: hidden;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  color: #344563;
 }
 
 /* INTRODUCTION */
@@ -87,14 +94,15 @@ html {
 }
 
 .links {
-  margin: 14px 30px;
+  margin: 20px 30px;
 }
 
 .connect {
   margin-top: 8px;
 }
 
-.socialmedia {
+.socialmedia,
+.nav-menu ul {
   display: flex;
 }
 
@@ -112,20 +120,21 @@ html {
   grid-row-gap: 10px;
 }
 
-.cards {
+.cards,
+.cards-rev {
   display: flex;
   flex-direction: column;
   padding: 16px;
   gap: 12px;
   border: 1px solid #dfe1e6;
   background-color: #fff;
-  height: 94%;
-  margin: 20px;
+  margin: 15px;
   border-radius: 22px;
   font-weight: 600;
 }
 
-.cards ul {
+.cards ul,
+.cards-rev ul {
   display: flex;
 }
 
@@ -169,16 +178,20 @@ html {
   border: 1px solid #6070ff;
   border-radius: 8px;
   width: 48%;
-  height: 10%;
+  height: 17%;
   color: #396df2;
   text-align: center;
   font-size: 16px;
   margin-top: 16px;
 }
 
+.one-div {
+  height: 12%;
+}
+
 .myself button {
-  width: 48%;
-  height: 81%;
+  width: 40%;
+  height: 80%;
 }
 
 /* Contact form button */
@@ -208,8 +221,6 @@ html {
 }
 
 .myself {
-  background: #fff;
-  height: 977px;
   padding: 12px;
   margin: 12px;
   padding-top: 65px;
@@ -333,4 +344,141 @@ hr {
 .contact textarea {
   border-radius: 8px;
   padding: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 21px 82px;
+  }
+
+  .header button {
+    visibility: hidden;
+  }
+
+  .header {
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-menu {
+    visibility: visible;
+  }
+
+  .nav-menu li {
+    padding-right: 12px;
+  }
+
+  .intro-text {
+    padding: 30px 130px;
+  }
+
+  .text {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+    color: #091e42;
+    padding: 0;
+  }
+
+  .para {
+    padding-top: 15px;
+    line-height: 28px;
+  }
+
+  .links {
+    padding: 0 130px;
+    margin: 0;
+  }
+
+  .grid-container {
+    height: 1580px;
+  }
+
+  .cards {
+    flex-direction: row;
+    padding: 22px;
+  }
+
+  .cards-rev {
+    flex-direction: row-reverse;
+    padding: 22px;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  .card-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+  }
+
+  .card-text {
+    padding-top: 5px;
+  }
+
+  .card-text h6 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .card-text p {
+    padding-right: 5px;
+  }
+
+  .btn {
+    width: 22%;
+    height: 14%;
+    margin-top: 25px;
+  }
+
+  .myself {
+    flex-direction: row;
+  }
+
+  .one {
+    width: 53%;
+    padding: 18px;
+  }
+
+  .myself h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    color: #091e42;
+  }
+
+  .myself button {
+    width: 30%;
+  }
+
+  .two {
+    width: 42%;
+  }
+
+  .language ul {
+    display: flex;
+  }
+
+  .language li {
+    flex-direction: column;
+    margin-right: 20px;
+    height: 120px;
+  }
+
+  .contact {
+    margin-top: 45px;
+  }
+
+  .contact p {
+    width: 45%;
+  }
 }
