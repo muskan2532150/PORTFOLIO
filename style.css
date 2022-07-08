@@ -23,6 +23,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 584px;
+  background-position-x: calc(91%);
 }
 
 .color {
@@ -149,8 +150,8 @@
 .cards img:hover,
 .cards-rev img:hover {
   transform: scale(0.9);
-  transition: transform 5s;
-  transition-timing-function: ease-in-out;
+   transition: transform 3s;
+  transition-timing-function: linear;
 }
 
 .cards ul,
