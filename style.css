@@ -66,6 +66,17 @@
   100% {transform: rotate(360deg);}
 }
 
+.nav-menu {
+  visibility: hidden;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  color: #344563;
+}
+
+
 /* INTRODUCTION */
 .intro-text {
   display: flex;
@@ -138,7 +149,7 @@
 .cards img:hover,
 .cards-rev img:hover {
   transform: scale(0.9);
-  transition: transform 3s;
+  transition: transform 5s;
   transition-timing-function: ease-in-out;
 }
 
