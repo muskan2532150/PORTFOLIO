@@ -57,6 +57,7 @@
   transition: transform 2s;
   animation-name: circle;
   animation-duration: 4s;
+  transform: rotate(360deg)
 }
 
 @keyframes circle {
