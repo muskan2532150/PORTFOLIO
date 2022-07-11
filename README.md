@@ -1,6 +1,9 @@
 # PORTFOLIO
 MAKING A PORTFOLIO
 
+# User Interface
+ ![Project Image](images/website_ss.png)
+
 ## Built With
 
 - HTML
