@@ -221,17 +221,12 @@
   color: #396df2;
   text-align: center;
   font-size: 16px;
-  margin-top: 16px;
+  margin: 17px 0;
   transition: background 3s;
 }
 
 .one-div {
   height: 12%;
-}
-
-.myself button {
-  width: 23%;
-  height: 80%;
 }
 
 /* Contact form button */
@@ -498,6 +493,7 @@ hr {
 
   .myself button {
     width: 30%;
+    height: 80%;    
   }
 
   .two {
