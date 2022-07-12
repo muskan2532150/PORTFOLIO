@@ -35,7 +35,7 @@ To get a local copy up and running follow these simple example steps.
  ```bash  
  cd foldername
  ```
--Clone the project repo
+- Clone the project repo
 ```bash 
 https://github.com/muskan2532150/PORTFOLIO.git
 ```
