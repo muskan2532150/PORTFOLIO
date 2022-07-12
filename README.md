@@ -13,12 +13,12 @@ MAKING A PORTFOLIO
 - HTML
 - CSS
 ###### Tools  
--Github
+- Github
 ###### Code Editor
 - VS code
 ###### Packages 
 - NPM
--Node
+- Node
 
 ## Getting Started
 
