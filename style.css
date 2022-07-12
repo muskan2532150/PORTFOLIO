@@ -45,11 +45,19 @@
   margin: 10px;
   padding: 12px;
   text-align: right;
+  width: 85%;
+  position: fixed;
+  top: 0;
+}
+
+.header > a {
+  font-size: 35px;
 }
 
 .header a {
-  font-size: 21px;
+  font-size: 25px;
   padding-right: 6px;
+  font-weight: 600;
 }
 
 .header a:hover {

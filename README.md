@@ -1,23 +1,53 @@
 # PORTFOLIO
 MAKING A PORTFOLIO
 
-# User Interface
+### User Interface
  ![Project Image](images/website_ss.png)
 
- ## Live Demo
+ ### Live Demo
  https://muskan2532150.github.io/PORTFOLIO/
 
 ## Built With
 
+###### Languages 
 - HTML
 - CSS
+###### Tools  
+-Github
+###### Code Editor
+- VS code
+###### Packages 
+- NPM
+-Node
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-A BROWSER IS NEEDED (CHROME,MICROSOFT EDGE)
+### Project Setup
+
+#### Prerequisites
+- Install a Code Editor (VS Code, Atom)
+- Install NPM and Nodejs package.
+
+#### Setup
+- Open Terminal make a empty folder and Cd to the folder
+ ```bash  
+ cd foldername
+ ```
+-Clone the project repo
+```bash 
+https://github.com/muskan2532150/PORTFOLIO.git
+```
+
+#### Linter
+- Create a .github/workflow folder and paste linter.yml file.
+- Run linter command in terminal
+```bash
+npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+```
+- Linter (Stylelint) is installed.
+
 
 ## Author
 
@@ -36,9 +66,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse
+- Figma Templates
 
 ## 📝 License
 
