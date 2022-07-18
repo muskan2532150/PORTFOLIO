@@ -125,6 +125,32 @@ nav > ul {
   display: none;
 }
 
+.click > nav > i {
+  font-size: 35px;
+  color: #fff;
+  display: block!important;
+}
+
+.click > a {
+  display: none;
+}
+
+.click > nav > ul {
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: flex-start;
+  width: 100%;
+  top: 70px;
+  left: 0;
+  line-height: 30px;
+}
+
+.click > nav > ul> li {
+  padding-bottom: 20px;
+}
+
 /* INTRODUCTION */
 .intro-text {
   display: flex;
