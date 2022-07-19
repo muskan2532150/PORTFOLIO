@@ -30,7 +30,7 @@
   color: #6070ff;
 }
 
-.header img {
+.header button {
   background-color: transparent;
   border: none;
   outline: none;
@@ -55,7 +55,7 @@
   width: 100%;
 }
 
-.header > a {
+.header>a {
   font-size: 35px;
   padding-left: 25px;
 }
@@ -97,11 +97,11 @@
   }
 }
 
-nav > i {
-  display: none!important;
+nav>button>i {
+  display: none !important;
 }
 
-nav > ul {
+nav>ul {
   visibility: hidden;
   font-weight: 500;
   font-size: 15px;
@@ -109,46 +109,8 @@ nav > ul {
   color: #344563;
 }
 
-nav > ul {
+nav>ul {
   display: none;
-}
-
-.click {
-  background: rgba(96, 112, 255, 0.8);
-  position: fixed;
-  backdrop-filter: blur(5px);
-  margin: 0;
-  padding: 45px;
-}
-
-.click > nav > img {
-  display: none;
-}
-
-.click > nav > i {
-  font-size: 35px;
-  color: #fff;
-  display: block!important;
-}
-
-.click > a {
-  display: none;
-}
-
-.click > nav > ul {
-  visibility: visible;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  align-items: flex-start;
-  width: 100%;
-  top: 70px;
-  left: 0;
-  line-height: 30px;
-}
-
-.click > nav > ul> li {
-  padding-bottom: 20px;
 }
 
 /* INTRODUCTION */
@@ -314,6 +276,7 @@ nav > ul {
   border-radius: 8px;
 }
 
+/* Myself Css */
 .myself {
   padding: 12px;
   margin: 12px;
@@ -375,6 +338,7 @@ hr {
   background: #dfe1e6;
 }
 
+/* Contact Css */
 .contact {
   background-color: #6070ff;
   display: flex;
@@ -440,12 +404,55 @@ hr {
   padding: 8px;
 }
 
+/*  Navbar Hamburger Css ::clicked*/
+.click {
+  background: rgba(96, 112, 255, 0.8);
+  position: fixed;
+  backdrop-filter: blur(5px);
+  margin: 0;
+  padding: 45px;
+  transition: all 0.5s;
+}
+
+.click > nav > button > img {
+  display: none;
+}
+
+.click > nav > button > i {
+  font-size: 35px;
+  color: #fff;
+  display: block !important;
+}
+
+.click > a {
+  display: none;
+}
+
+.click > nav >ul > li > a {
+  color: #fff;
+}
+
+.click > nav > ul {
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100vh;
+  line-height: 30px;
+}
+
+.click > nav > ul > li {
+  padding-bottom: 20px;
+}
+
+/* Media Query */
 @media screen and (min-width: 768px) {
   .container {
     padding: 21px 82px;
   }
 
-  nav > img {
+  nav > button > img {
     display: none;
   }
 
@@ -455,7 +462,7 @@ hr {
   }
 
   nav > ul {
-   display: flex;
+    display: flex;
     visibility: visible;
     float: right;
   }
