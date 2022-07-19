@@ -55,7 +55,7 @@
   width: 100%;
 }
 
-.header>a {
+.header > a {
   font-size: 35px;
   padding-left: 25px;
 }
@@ -64,15 +64,6 @@
   font-size: 25px;
   padding-right: 6px;
   font-weight: 600;
-}
-
-
-.header a:hover {
-  font-size: 24px;
-  transition: transform 2s;
-  animation-name: circle;
-  animation-duration: 4s;
-  transform: rotate(360deg);
 }
 
 @keyframes circle {
@@ -97,19 +88,16 @@
   }
 }
 
-nav>button>i {
+nav > button > i {
   display: none !important;
 }
 
-nav>ul {
+nav > ul {
   visibility: hidden;
   font-weight: 500;
   font-size: 15px;
   align-items: center;
   color: #344563;
-}
-
-nav>ul {
   display: none;
 }
 
@@ -210,17 +198,6 @@ nav>ul {
   margin-bottom: 12px;
 }
 
-.language img {
-  padding: 9px 15px;
-}
-
-.cards img:hover,
-.cards-rev img:hover {
-  transform: scale(0.9);
-  transition: transform 3s;
-  transition-timing-function: linear;
-}
-
 .list {
   list-style: none;
   font-size: 12px;
@@ -248,32 +225,6 @@ nav>ul {
 
 .one-div {
   height: 12%;
-}
-
-/* Contact form button */
-#submit {
-  width: 110px;
-  font-size: 17px;
-  line-height: 24px;
-  color: #6070ff;
-  background: #fff;
-  border: 1px solid #7f8cff;
-  border-radius: 8px;
-}
-
-.btn:hover,
-#submit:hover,
-.myself button:hover {
-  background: #6070ff;
-  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-  border-radius: 8px;
-  color: #fff;
-}
-
-.btn:active,
-.myself button:active {
-  background: #2230d2;
-  border-radius: 8px;
 }
 
 /* Myself Css */
@@ -325,6 +276,10 @@ nav>ul {
   font-weight: 600;
 }
 
+.language img {
+  padding: 9px 15px;
+}
+
 .myself_ul {
   padding-top: 25px;
   color: #000;
@@ -359,10 +314,6 @@ hr {
   margin-top: 74px;
   padding: 11px;
   padding-right: 31px;
-}
-
-.contact h2:hover {
-  transform: translateX(-10px);
 }
 
 .contact p {
@@ -404,6 +355,16 @@ hr {
   padding: 8px;
 }
 
+#submit {
+  width: 110px;
+  font-size: 17px;
+  line-height: 24px;
+  color: #6070ff;
+  background: #fff;
+  border: 1px solid #7f8cff;
+  border-radius: 8px;
+}
+
 /*  Navbar Hamburger Css ::clicked*/
 .click {
   background: rgba(96, 112, 255, 0.8);
@@ -428,7 +389,7 @@ hr {
   display: none;
 }
 
-.click > nav >ul > li > a {
+.click > nav > ul > li > a {
   color: #fff;
 }
 
@@ -444,6 +405,42 @@ hr {
 
 .click > nav > ul > li {
   padding-bottom: 20px;
+}
+
+/* Hover  */
+.btn:hover,
+#submit:hover,
+.myself button:hover {
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  border-radius: 8px;
+  color: #fff;
+}
+
+.header a:hover {
+  font-size: 24px;
+  transition: transform 2s;
+  animation-name: circle;
+  animation-duration: 4s;
+  transform: rotate(360deg);
+}
+
+.cards img:hover,
+.cards-rev img:hover {
+  transform: scale(0.9);
+  transition: transform 3s;
+  transition-timing-function: linear;
+}
+
+.contact h2:hover {
+  transform: translateX(-10px);
+}
+
+/* Active */
+.btn:active,
+.myself button:active {
+  background: #2230d2;
+  border-radius: 8px;
 }
 
 /* Media Query */
