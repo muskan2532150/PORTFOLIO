@@ -369,7 +369,7 @@ hr {
 .click {
   background: #6070ff;
   position: fixed;
-  backdrop-filter: blur(5px);
+  opacity: 0.9;
   margin: 0;
   padding: 45px;
   transition: all 0.5s;
