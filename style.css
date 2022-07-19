@@ -367,7 +367,7 @@ hr {
 
 /*  Navbar Hamburger Css ::clicked */
 .click {
-  background: rgba(96, 112, 255, 0.8);
+  background: #6070ff;
   position: fixed;
   backdrop-filter: blur(5px);
   margin: 0;
@@ -391,6 +391,7 @@ hr {
 
 .click > nav > ul > li > a {
   color: #fff;
+  font-size: 32px;
 }
 
 .click > nav > ul {
