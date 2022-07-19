@@ -9,11 +9,11 @@
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   scroll-behavior: smooth;
+  list-style: none;
 }
 
 .container li,
 .myself li {
-  list-style: none;
   padding-top: 10px;
   padding-right: 12px;
 }
@@ -30,7 +30,7 @@
   color: #6070ff;
 }
 
-.header img {
+.header button {
   background-color: transparent;
   border: none;
   outline: none;
@@ -43,29 +43,27 @@
   justify-content: space-between;
   align-items: center;
   margin: 10px;
-  padding: 12px;
+  padding: 24px;
   text-align: right;
-  width: 85%;
+  width: 100%;
   position: fixed;
   top: 0;
+  right: 0;
+}
+
+.header nav {
+  width: 100%;
 }
 
 .header > a {
   font-size: 35px;
+  padding-left: 25px;
 }
 
 .header a {
   font-size: 25px;
   padding-right: 6px;
   font-weight: 600;
-}
-
-.header a:hover {
-  font-size: 24px;
-  transition: transform 2s;
-  animation-name: circle;
-  animation-duration: 4s;
-  transform: rotate(360deg);
 }
 
 @keyframes circle {
@@ -90,23 +88,26 @@
   }
 }
 
-.nav-menu {
+nav > button > i {
+  display: none !important;
+}
+
+nav > ul {
   visibility: hidden;
   font-weight: 500;
   font-size: 15px;
-  line-height: 20px;
   align-items: center;
-  text-align: center;
   color: #344563;
+  display: none;
 }
 
 /* INTRODUCTION */
 .intro-text {
   display: flex;
   flex-direction: column;
-  padding: 12px 30px;
+  padding: 12px 50px;
   margin-top: 70px;
-  padding-top: 68px;
+  padding-top: 70px;
 }
 
 .text {
@@ -131,15 +132,14 @@
 }
 
 .links {
-  margin: 20px 30px;
+  margin: 20px 50px;
 }
 
 .connect {
   margin-top: 8px;
 }
 
-.socialmedia,
-.nav-menu ul {
+.socialmedia {
   display: flex;
 }
 
@@ -198,17 +198,6 @@
   margin-bottom: 12px;
 }
 
-.language img {
-  padding: 9px 15px;
-}
-
-.cards img:hover,
-.cards-rev img:hover {
-  transform: scale(0.9);
-  transition: transform 3s;
-  transition-timing-function: linear;
-}
-
 .list {
   list-style: none;
   font-size: 12px;
@@ -238,32 +227,7 @@
   height: 12%;
 }
 
-/* Contact form button */
-#submit {
-  width: 110px;
-  font-size: 17px;
-  line-height: 24px;
-  color: #6070ff;
-  background: #fff;
-  border: 1px solid #7f8cff;
-  border-radius: 8px;
-}
-
-.btn:hover,
-#submit:hover,
-.myself button:hover {
-  background: #6070ff;
-  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-  border-radius: 8px;
-  color: #fff;
-}
-
-.btn:active,
-.myself button:active {
-  background: #2230d2;
-  border-radius: 8px;
-}
-
+/* Myself Css */
 .myself {
   padding: 12px;
   margin: 12px;
@@ -312,6 +276,10 @@
   font-weight: 600;
 }
 
+.language img {
+  padding: 9px 15px;
+}
+
 .myself_ul {
   padding-top: 25px;
   color: #000;
@@ -325,6 +293,7 @@ hr {
   background: #dfe1e6;
 }
 
+/* Contact Css */
 .contact {
   background-color: #6070ff;
   display: flex;
@@ -345,10 +314,6 @@ hr {
   margin-top: 74px;
   padding: 11px;
   padding-right: 31px;
-}
-
-.contact h2:hover {
-  transform: translateX(-10px);
 }
 
 .contact p {
@@ -390,13 +355,103 @@ hr {
   padding: 8px;
 }
 
+#submit {
+  width: 110px;
+  font-size: 17px;
+  line-height: 24px;
+  color: #6070ff;
+  background: #fff;
+  border: 1px solid #7f8cff;
+  border-radius: 8px;
+}
+
+/*  Navbar Hamburger Css ::clicked */
+.click {
+  background: #6070ff;
+  position: fixed;
+  opacity: 0.9;
+  margin: 0;
+  padding: 45px;
+  transition: all 0.5s;
+}
+
+.click > nav > button > img {
+  display: none;
+}
+
+.click > nav > button > i {
+  font-size: 35px;
+  color: #fff;
+  display: block !important;
+}
+
+.click > a {
+  display: none;
+}
+
+.click > nav > ul > li > a {
+  color: #fff;
+  font-size: 32px;
+}
+
+.click > nav > ul {
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100vh;
+  line-height: 30px;
+}
+
+.click > nav > ul > li {
+  padding-bottom: 20px;
+}
+
+/* Hover  */
+.btn:hover,
+#submit:hover,
+.myself button:hover {
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  border-radius: 8px;
+  color: #fff;
+}
+
+.header a:hover {
+  font-size: 24px;
+  transition: transform 2s;
+  animation-name: circle;
+  animation-duration: 4s;
+  transform: rotate(360deg);
+}
+
+.cards img:hover,
+.cards-rev img:hover {
+  transform: scale(0.9);
+  transition: transform 3s;
+  transition-timing-function: linear;
+}
+
+.contact h2:hover {
+  transform: translateX(-10px);
+}
+
+/* Active */
+.btn:active,
+.myself button:active {
+  background: #2230d2;
+  border-radius: 8px;
+}
+
+/* Media Query */
 @media screen and (min-width: 768px) {
   .container {
     padding: 21px 82px;
   }
 
-  .header img {
-    visibility: hidden;
+  nav > button > img {
+    display: none;
   }
 
   .header {
@@ -404,11 +459,13 @@ hr {
     padding: 0;
   }
 
-  .nav-menu {
+  nav > ul {
+    display: flex;
     visibility: visible;
+    float: right;
   }
 
-  .nav-menu li {
+  nav > li {
     padding-right: 12px;
   }
 

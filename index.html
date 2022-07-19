@@ -15,23 +15,22 @@
 <body>
 
     <!-- NAVBAR -->
-    <div class="container">
-        <header class="header">
+    <div class="container ">
+        <header class="header navright">
             <a href="#">M</a>
             <nav>
-                <img src="images/Menu.png" alt="Hamburger">
-                <div class="nav-menu">
+              <button class="burger"><img src="images/Menu.png" alt="Hamburger"></button>  
+              <button><i class="fa-solid fa-xmark close-btn" ></i></button>  
                     <ul>
-                        <li><a href="#About">About</a></li>
-                        <li><a href="#Project">Project</a></li>
-                        <li><a href="#phone">Contact us</a></li>
+                        <li class="nav-link"><a href="#About">About</a></li>
+                        <li class="nav-link"><a href="#Project" >Project</a></li>
+                        <li class="nav-link"><a href="#phone">Contact</a></li>
                     </ul>
-                </div>
             </nav>
         </header>
 
         <!-- INTRODUCTION -->
-        <section class="intro-text">
+        <section class="intro-text  intro">
             <h1 class="text"> I’m Muskan</h1>
             <h2 class="text">Glad to see you!</h2>
             <p class="para">I’m a software developer! I can help you build a product , feature or website Look through
@@ -208,6 +207,7 @@
             <input type="submit" value="Get It Touch" id="submit">
         </form>
     </section>
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/ce0e1011ca.js" crossorigin="anonymous"></script>
 </body>
 
