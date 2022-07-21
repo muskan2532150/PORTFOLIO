@@ -8,7 +8,7 @@ const cardInfo = [
     name: 'TONIC',
     label: 'CANOPY',
     list: ['Back End Dev', '2015'],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.',
     featuredImage: 'images/card1.png',
     technologies: ['Bootstraps', 'HTML', 'CSS', 'JAVASCRIPT', 'RUBY', 'GITHUB'],
     linkliveversion: '#',
@@ -18,7 +18,7 @@ const cardInfo = [
     name: 'Multi-Post Stories',
     label: 'CANOPY',
     list: ['Back End Dev', '2015'],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. ',
     featuredImage: 'images/card2.png',
     technologies: ['Bootstraps', 'HTML', 'CSS', 'JAVASCRIPT', 'RUBY', 'GITHUB'],
     linktoliveversion: '#',
@@ -28,7 +28,7 @@ const cardInfo = [
     name: 'TONIC',
     label: 'CANOPY',
     list: ['Back End Dev', '2015'],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.',
     featuredImage: 'images/card3.png',
     technologies: ['Bootstraps', 'HTML', 'CSS', 'JAVASCRIPT', 'RUBY', 'GITHUB'],
     linkliveversion: '#',
@@ -38,7 +38,7 @@ const cardInfo = [
     name: 'Multi-Post Stories',
     label: 'CANOPY',
     list: ['Back End Dev', '2015'],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.',
     featuredImage: 'images/card4.png',
     technologies: ['Bootstraps', 'HTML', 'CSS', 'JAVASCRIPT', 'RUBY', 'GITHUB'],
     linktoliveversion: '#',
@@ -283,6 +283,7 @@ projectBtn.forEach((projBtn, index) => {
   projBtn.addEventListener('click', () => {
     popUpcon[index].classList.add('active');
     overLay.classList.add('active');
+    document.body.style.overflow = 'hidden';
   });
 });
 const previewCloseBtn = document.querySelectorAll('.preview-close-btn');
@@ -290,6 +291,7 @@ previewCloseBtn.forEach((close, index) => {
   close.addEventListener('click', () => {
     popUpcon[index].classList.remove('active');
     overLay.classList.remove('active');
+    document.body.style.overflow = 'auto';
   });
 });
 
@@ -298,5 +300,15 @@ overLay.addEventListener('click', () => {
   popUps.forEach((popUp) => {
     popUp.classList.remove('active');
     overLay.classList.remove('active');
+    document.body.style.overflow = 'auto';
   });
 });
+
+function validateForm(ev) {
+  let emails = document.forms.email.value;
+  let error = document.getElementById("error-message");
+  if (emails.value != String(emails.value).toLowerCase()) {
+    ev.preventDefault();
+    error.innerText = "The content of the email field has to be in lower case.";
+  }
+} 
