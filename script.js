@@ -295,7 +295,7 @@ previewCloseBtn.forEach((close, index) => {
   });
 });
 
-overLay.addEventListener('click' , () => {
+overLay.addEventListener('click', () => {
   const popUps = document.querySelectorAll('.pop-up-window.active');
   popUps.forEach((popUp) => {
     popUp.classList.remove('active');
