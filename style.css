@@ -522,6 +522,11 @@ hr {
   border-radius: 8px;
 }
 
+#error-message {
+  font-size: 0.85rem;
+  color: red;
+}
+
 /* Media Query */
 @media screen and (min-width: 768px) {
   .container {
