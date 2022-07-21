@@ -30,7 +30,8 @@
   color: #6070ff;
 }
 
-.header button {
+.header button,
+.preview-close-btn {
   background-color: transparent;
   border: none;
   outline: none;
@@ -118,7 +119,8 @@ nav > ul {
   color: #172b4d;
 }
 
-.para {
+.para,
+.preview-body-p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -171,26 +173,28 @@ nav > ul {
 }
 
 .cards ul,
-.cards-rev ul {
+.cards-rev ul,
+.card-text,
+.preview-title,
+.preview-div-top {
   display: flex;
 }
 
-.card-title {
+.card-title,
+.preview-h3 {
   font-weight: 700;
   color: #172b4d;
 }
 
-.card-text {
-  display: flex;
-}
-
-.card-text h4 {
+.card-text h4,
+.preview-h4 {
   font-size: 13px;
   color: #344563;
   padding-right: 32px;
 }
 
-.card-text li {
+.card-text li,
+.preview-title-li {
   list-style: disc;
   font-size: 13px;
   color: #7a869a;
@@ -198,7 +202,8 @@ nav > ul {
   margin-bottom: 12px;
 }
 
-.list {
+.list,
+.preview-body-li {
   list-style: none;
   font-size: 12px;
   padding: 4px 12px;
@@ -211,7 +216,8 @@ nav > ul {
 }
 
 .btn,
-.myself button {
+.myself button,
+.preview-body-btn {
   border: 1px solid #6070ff;
   border-radius: 8px;
   width: 35%;
@@ -375,7 +381,8 @@ hr {
   transition: all 0.5s;
 }
 
-.click > nav > button > img {
+.click > nav > button > img,
+.click > a {
   display: none;
 }
 
@@ -383,10 +390,6 @@ hr {
   font-size: 35px;
   color: #fff;
   display: block !important;
-}
-
-.click > a {
-  display: none;
 }
 
 .click > nav > ul > li > a {
@@ -411,7 +414,8 @@ hr {
 /* Hover  */
 .btn:hover,
 #submit:hover,
-.myself button:hover {
+.myself button:hover,
+.preview-body-btn:hover {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
@@ -439,6 +443,7 @@ hr {
 
 /* Active */
 .btn:active,
+.myself button:active,
 .myself button:active {
   background: #2230d2;
   border-radius: 8px;
@@ -472,6 +477,35 @@ hr {
   font-size: 32px;
 }
 
+.preview-h4 {
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.preview-body {
+  margin-top: 34px;
+}
+
+.preview-hr {
+  border: 1px solid #ebecf0;
+  margin: 24px;
+}
+
+.preview-body-btn {
+  margin-right: 15px;
+  padding: 5px;
+}
+
+.preview-body-btn i {
+  margin-left: 7px;
+}
+
+.pop-up-window img {
+  width: -webkit-fill-available;
+  display: block;
+}
+
+/* Overlay */
 #overlay {
   background: rgba(246, 246, 248, 0.7);
   top: 0;
@@ -566,7 +600,8 @@ hr {
     color: #091e42;
   }
 
-  .card-text {
+  .card-text,
+  .preview-title {
     padding-top: 5px;
   }
 
@@ -630,4 +665,29 @@ hr {
   .contact p {
     width: 45%;
   }
+  .preview-body {
+    display: flex;
+    margin: 11px;
+    }
+  .preview-body-right {
+    margin-left: 10px;
+  }
+  
+    .preview-body-li {
+      width: fit-content;
+      padding: 6px;
+      margin: 14px;
+    }
+  
+    .preview-body-p {
+      margin-top: 10px;
+      width: 58%;
+    }
+  
+    .preview-body-btn {
+      margin-right: 15px;
+      padding: 5px;
+      margin-left: 14px;
+      margin-top: 27px;
+    }
 }
