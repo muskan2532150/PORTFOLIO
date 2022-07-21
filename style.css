@@ -427,7 +427,8 @@ hr {
 .preview-body-btn {
   margin-right: 15px;
   padding: 5px;
-  width: auto;
+  width: 40%;
+  margin-left: 15px;
 }
 
 .preview-body-btn i {
