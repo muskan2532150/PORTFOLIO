@@ -304,15 +304,17 @@ overLay.addEventListener('click', () => {
   });
 });
 
-const formF =document.getElementById('formSubmit');
-const emails = document.getElementById('email').value;
+const formF = document.getElementById('formSubmit');
+const email = document.getElementById('email');
 // const suBmit = document.getElementById('submit');
 const error = document.querySelector('#error-message');
 
+
+
 formF.addEventListener('submit', (ev) => {
-  let error = document.getElementById("error-message");
-   if (email.value !== String(email.value).toLowerCase()){  
-     ev.preventDefault();
+  const error = document.getElementById("error-message");
+  if (email.value !== String(email.value).toLowerCase()) {
+    ev.preventDefault();
     error.innerText = 'The content of the email field has to be in lower case.';
-    } 
-})
+  }
+});
