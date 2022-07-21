@@ -304,13 +304,14 @@ overLay.addEventListener('click', () => {
   });
 });
 
-let forms=document.getElementById('form');
-let emails = document.getElementById('email').value;
+// const forms=document.getElementById('form');
+const emails = document.getElementById('email').value;
+const suBmit = document.getElementById('submit');
 
-function validateForm(ev) {
-  let error = document.getElementById("error-message");
-  if (emails.value != String(emails.value).toLowerCase()) {
+suBmit.addEventListener('click',(ev)=> {
+  const error = document.getElementById("error-message");
+  if (emails.value !== String(emails.value).toLowerCase()) {
     ev.preventDefault();
-    error.innerText = "The content of the email field has to be in lower case.";
+    error.innerText = 'The content of the email field has to be in lower case.';
   }
-} 
+})
