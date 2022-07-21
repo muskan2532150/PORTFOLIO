@@ -517,7 +517,6 @@ hr {
 
 /* Active */
 .btn:active,
-.myself button:active,
 .myself button:active {
   background: #2230d2;
   border-radius: 8px;
