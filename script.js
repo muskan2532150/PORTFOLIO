@@ -308,10 +308,10 @@ overLay.addEventListener('click', () => {
 const emails = document.getElementById('email').value;
 const suBmit = document.getElementById('submit');
 
-suBmit.addEventListener('click',(ev)=> {
+suBmit.addEventListener('click' , (ev) => {
   const error = document.getElementById("error-message");
   if (emails.value !== String(emails.value).toLowerCase()) {
     ev.preventDefault();
     error.innerText = 'The content of the email field has to be in lower case.';
   }
-})
+});
