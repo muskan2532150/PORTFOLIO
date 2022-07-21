@@ -444,6 +444,53 @@ hr {
   border-radius: 8px;
 }
 
+/* Pop-up  */
+
+.pop-up-window {
+  transform: scale(0);
+  transition: 200ms ease-in-out;
+  background: #fff;
+  position: absolute;
+  border-radius: 12px;
+  z-index: 10;
+  padding: 15px 30px;
+}
+
+.pop-up-window.active {
+  transform: scale(1);
+}
+
+.preview-div-top {
+  justify-content: space-between;
+}
+
+.preview-close-btn {
+  font-size: 29px;
+}
+
+.preview-h3 {
+  font-size: 32px;
+}
+
+#overlay {
+  background: rgba(246, 246, 248, 0.7);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+  backdrop-filter: blur(4px);
+}
+
+/* Pop-up  */
+
 /* Media Query */
 @media screen and (min-width: 768px) {
   .container {
