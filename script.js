@@ -285,3 +285,23 @@ navLink.forEach((link) => {
     document.body.style.overflow = 'visible';
   };
 });
+
+let overLay = document.getElementById("overlay");
+let popUpcon = document.querySelectorAll(".pop-up-window");
+let projectBtn = document.querySelectorAll(".btn");
+
+projectBtn.forEach((projBtn, index)=> {
+  projBtn.addEventListener('click', () => {
+    popUpcon[index].classList.add('active');
+    overLay.classList.add('active');
+  }) 
+});
+
+let previewCloseBtn = document.querySelectorAll(".preview-close-btn");
+
+previewCloseBtn.forEach((close, index)=> {
+  close.addEventListener('click', () => {
+    popUpcon[index].classList.remove('active');
+    overLay.classList.remove('active');
+  })  
+});
