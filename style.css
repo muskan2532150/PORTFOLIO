@@ -712,9 +712,9 @@ hr {
   .preview-body-btn {
     margin-right: 15px;
     padding: 5px;
-    margin-left: 22px;
+    margin-left: 10px;
     margin-top: 10px;
-    width: fit-content;
-    height: fit-content;
+    width: 43%;
+    height: auto;
   }
 }
