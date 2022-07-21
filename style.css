@@ -538,7 +538,6 @@ hr {
 
 #error-message {
   font-size: 0.85rem;
-  color: red;
 }
 
 /* Media Query */
@@ -713,9 +712,9 @@ hr {
   .preview-body-btn {
     margin-right: 15px;
     padding: 5px;
-    margin-left: 22px;
+    margin-left: 10px;
     margin-top: 10px;
-    width: 42%;
+    width: 43%;
     height: auto;
   }
 }
