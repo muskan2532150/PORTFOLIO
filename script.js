@@ -304,8 +304,10 @@ overLay.addEventListener('click', () => {
   });
 });
 
+let forms=document.getElementById('form');
+let emails = document.getElementById('email').value;
+
 function validateForm(ev) {
-  let emails = document.forms.email.value;
   let error = document.getElementById("error-message");
   if (emails.value != String(emails.value).toLowerCase()) {
     ev.preventDefault();
