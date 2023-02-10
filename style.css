@@ -43,21 +43,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px;
   padding: 24px;
   text-align: right;
   width: 100%;
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #eef0f7;
+  background-color: rgb(237 241 255 / 81%);
+  ;
 }
 
 .header nav {
   width: 100%;
 }
 
-.header > a {
+
+
+.header>a {
   font-size: 35px;
   padding-left: 25px;
 }
@@ -90,11 +92,11 @@
   }
 }
 
-nav > button > i {
+nav>button>i {
   display: none !important;
 }
 
-nav > ul {
+nav>ul {
   visibility: hidden;
   font-weight: 500;
   font-size: 15px;
@@ -159,6 +161,14 @@ nav > ul {
   object-fit: contain;
   border-radius: 50%;
   vertical-align: middle;
+}
+
+.skill-ul {
+  flex-wrap: wrap;
+}
+
+.skill-ul li {
+  max-width: 40%;
 }
 
 /* Works */
@@ -231,16 +241,12 @@ nav > ul {
   border: 1px solid #6070ff;
   border-radius: 8px;
   width: 35%;
-  height: 17%;
+  padding: .6rem 0;
   color: #396df2;
   text-align: center;
   font-size: 16px;
   margin: 17px 0;
   transition: background 3s;
-}
-
-.one-div {
-  height: 12%;
 }
 
 /* Myself Css */
@@ -292,9 +298,13 @@ nav > ul {
   display: inline-flex;
   align-items: center;
   font-weight: 600;
+  font-size: 1rem;
+  flex-direction: column;
 }
 
-.language img {
+.language img,
+.database img,
+.frame img {
   padding: 9px 15px;
 }
 
@@ -481,23 +491,23 @@ hr {
   transition: all 0.5s;
 }
 
-.click > nav > button > img,
-.click > a {
+.click>nav>button>img,
+.click>a {
   display: none;
 }
 
-.click > nav > button > i {
+.click>nav>button>i {
   font-size: 35px;
   color: #fff;
   display: block !important;
 }
 
-.click > nav > ul > li > a {
+.click>nav>ul>li>a {
   color: #fff;
   font-size: 32px;
 }
 
-.click > nav > ul {
+.click>nav>ul {
   visibility: visible;
   display: flex;
   flex-direction: column;
@@ -507,7 +517,7 @@ hr {
   line-height: 30px;
 }
 
-.click > nav > ul > li {
+.click>nav>ul>li {
   padding-bottom: 20px;
 }
 
@@ -558,7 +568,7 @@ hr {
     padding: 21px 82px;
   }
 
-  nav > button > img {
+  nav>button>img {
     display: none;
   }
 
@@ -567,18 +577,18 @@ hr {
     padding: 1rem;
   }
 
-  nav > ul {
+  nav>ul {
     display: flex;
     visibility: visible;
     float: right;
   }
 
-  nav > li {
+  nav>li {
     padding-right: 12px;
   }
 
   .intro-text {
-    padding: 30px 130px;
+    padding: 30px 0;
   }
 
   .text {
@@ -596,12 +606,8 @@ hr {
   }
 
   .links {
-    padding: 0 130px;
+    padding: 0;
     margin: 0;
-  }
-
-  .grid-container {
-    height: 1580px;
   }
 
   .cards {
@@ -646,8 +652,7 @@ hr {
 
   .btn {
     width: 26%;
-    height: 14%;
-    margin-top: 25px;
+    padding: 0.2rem;
   }
 
   .myself {
