@@ -51,8 +51,11 @@ npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standa
 
 ## Author
 
-- GitHub: @muskan2532150
-- Twitter: @muskan2532150
+#### 👤 **Muskan Gupta**
+
+- GitHub: [Muskan Gupta](https://github.com/muskan2532150)
+- Twitter: [Muskan Gupta](muskan2532150)
+- Linkedin:[Muskan Gupta](https://www.linkedin.com/in/muskan-gupt/)
 
 ## 🤝 Contributing
 
