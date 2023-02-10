@@ -50,6 +50,7 @@
   position: fixed;
   top: 0;
   right: 0;
+  background-color: #eef0f7;
 }
 
 .header nav {
@@ -149,6 +150,15 @@ nav > ul {
 .language img {
   font-size: 25px;
   color: #505f79;
+}
+
+.language img,
+.frame img,
+.database img {
+  width: 3.25rem;
+  object-fit: contain;
+  border-radius: 50%;
+  vertical-align: middle;
 }
 
 /* Works */
@@ -255,7 +265,7 @@ nav > ul {
   padding-bottom: 8px;
 }
 
-.language h4,
+.myself_ul_li h4,
 .myself_ul li {
   font-weight: 500;
   font-size: 20px;
@@ -269,7 +279,9 @@ nav > ul {
   padding-right: 32px !important;
 }
 
-.language li {
+.language li,
+.frame li,
+.database li {
   color: #253858;
   list-style: none;
   background: #f7f7f9;
@@ -552,7 +564,7 @@ hr {
 
   .header {
     margin: 0;
-    padding: 0;
+    padding: 1rem;
   }
 
   nav > ul {
@@ -595,11 +607,13 @@ hr {
   .cards {
     flex-direction: row;
     padding: 22px;
+    padding-left: 5rem;
   }
 
   .cards-rev {
     flex-direction: row-reverse;
     padding: 22px;
+    padding-left: 5rem;
   }
 
   .card-body {
@@ -664,11 +678,13 @@ hr {
   }
 
   .language ul,
+  .frame ul,
   .preview-body {
     display: flex;
   }
 
-  .language li {
+  .language li,
+  .frame li {
     flex-direction: column;
     margin-right: 20px;
     height: 120px;
@@ -680,6 +696,10 @@ hr {
 
   .contact p {
     width: 45%;
+  }
+
+  .img-fluid {
+    width: 20rem;
   }
 
   .pop-up-window {

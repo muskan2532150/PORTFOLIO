@@ -5,58 +5,58 @@ const navLink = document.querySelectorAll('.nav-link');
 
 const cardInfo = [
   {
-    name: 'TONIC',
-    label: 'CANOPY',
-    list: ['Back End Dev', '2015'],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    featuredImage: 'images/card3_ds.png',
-    technologies: ['Bootstraps', 'HTML', 'CSS', 'JAVASCRIPT', 'RUBY', 'GITHUB'],
-    linkliveversion: '#',
-    linksource: '#',
+    name: 'FitMe-Up',
+    label: 'Microverse',
+    list: ['FullStack', '2023'],
+    description: 'Fit me up frontend is a react-based application that enables a given user to book a trainer and it consumes an api defined in the project: Fit Me Up Backend. On top of this it also supports admin users to manage trainers that is creating and removing of the different trainers.',
+    featuredImage: 'images/FitME-up.png',
+    technologies: ['React', 'RubyOnRails', '', ''],
+    linkliveversion: 'https://fitmeup-trainers.netlify.app/',
+    linksource: 'https://github.com/killy10o10/FitMeUp',
   },
   {
-    name: 'Multi-Post Stories',
-    label: 'CANOPY',
-    list: ['Back End Dev', '2015'],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. ',
-    featuredImage: 'images/card4_ds.png',
-    technologies: ['Bootstraps', 'HTML', 'CSS', 'JAVASCRIPT', 'RUBY', 'GITHUB'],
-    linktoliveversion: '#',
-    linktosource: '#',
+    name: 'Budget-App',
+    label: 'Microverse',
+    list: ['Back-End', '2023'],
+    description: 'Budget App is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+    featuredImage: 'images/Budget-App.png',
+    technologies: ['Bootstraps', 'RubyOnRAils', 'Nodejs', ''],
+    linkliveversion: 'https://budget-app-3fv5.onrender.com/',
+    linksource: 'https://github.com/muskan2532150/Budget-App',
   },
   {
-    name: 'TONIC',
-    label: 'CANOPY',
-    list: ['Back End Dev', '2015'],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    featuredImage: 'images/card1_ds.png',
-    technologies: ['Bootstraps', 'HTML', 'CSS', 'JAVASCRIPT', 'RUBY', 'GITHUB'],
-    linkliveversion: '#',
-    linksource: '#',
+    name: 'Awesome Books',
+    label: 'Microverse',
+    list: ['Front-End', '2022'],
+    description: 'A SPW(Single Page Website) that can track your books on your browser!',
+    featuredImage: 'images/Awesome-Books.png',
+    technologies: ['Bootstraps', 'HTML', 'CSS', 'JAVASCRIPT'],
+    linkliveversion: 'https://muskan2532150.github.io/Awesome_books/',
+    linksource: 'https://github.com/muskan2532150/Awesome_books',
   },
   {
-    name: 'Multi-Post Stories',
-    label: 'CANOPY',
-    list: ['Back End Dev', '2015'],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    featuredImage: 'images/card2_ds.png',
-    technologies: ['Bootstraps', 'HTML', 'CSS', 'JAVASCRIPT', 'RUBY', 'GITHUB'],
-    linktoliveversion: '#',
-    linktosource: '#',
+    name: 'Space Travelers Hub',
+    label: 'Microverse',
+    list: ['Front-End', '2022'],
+    description: 'Build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
+    featuredImage: 'images/Space.png',
+    technologies: ['Bootstraps', 'HTML', 'CSS', 'JAVASCRIPT'],
+    linkliveversion: 'https://muskan2532150.github.io/Space-Travelers-Hub/',
+    linksource: 'https://github.com/muskan2532150/Space-Travelers-Hub',
   },
 ];
 
 function popup() {
   const prjSection = document.querySelector('.grid-container');
   prjSection.innerHTML = `<div class='cards'>
-  <img src='images/card1.png' alt='Project1'>
+  <img src='${cardInfo[0].featuredImage}' class="img-fluid" alt='${cardInfo[0].name}'>
   <div class='card-body'>
       <h3 class='card-title'>${cardInfo[0].name}</h3>
       <div class='card-text'>
           <h4>${cardInfo[0].label}</h4>
           <ul>
               <li>${cardInfo[0].list[0]}</li>
-              <li>${cardInfo[0].list[0]}</li>
+              <li>${cardInfo[0].list[1]}</li>
           </ul>
       </div>
       <p class='para'>
@@ -73,14 +73,14 @@ function popup() {
 </div>
 
 <div class='cards-rev'>
-  <img src='images/card2.png' alt='Project 2'>
+  <img src='${cardInfo[1].featuredImage}' alt='${cardInfo[1].name}' class="img-fluid">
   <div class='card-body'>
       <h3 class='card-title'>${cardInfo[1].name}</h3>
       <div class='card-text'>
-          <h4>${cardInfo[1].label}</h4>
+          <h4>${cardInfo[0].label}</h4>
           <ul>
-              <li>${cardInfo[1].list[0]}</li>
-              <li>${cardInfo[1].list[1]}</li>
+              <li>${cardInfo[0].list[0]}</li>
+              <li>${cardInfo[0].list[1]}</li>
           </ul>
       </div>
       <p class='para'>
@@ -97,7 +97,7 @@ function popup() {
 </div>
 
 <div class='cards'>
-  <img src='images/card3.png' alt='Project 3'>
+  <img src='${cardInfo[2].featuredImage}' class="img-fluid" alt=${cardInfo[2].name}'>
   <div class='card-body'>
       <h3 class='card-title'>${cardInfo[2].name}</h3>
       <div class='card-text'>
@@ -121,10 +121,10 @@ function popup() {
 </div>
 
 <div class='cards-rev'>
-  <img src='images/card4.png' class='mb_img' alt='Project 4'>
+  <img src='${cardInfo[3].featuredImage}' class='mb_img img-fluid' alt='${cardInfo[3].name}'>
  
   <div class='card-body'>
-      <h3 class='card-title'>Multi-Post Stories</h3>
+      <h3 class='card-title'>${cardInfo[3].name}</h3>
       <div class='card-text'>
           <h4>${cardInfo[3].label}</h4>
           <ul>
@@ -194,8 +194,8 @@ function popup() {
     btn2.setAttribute('class', 'preview-body-btn');
     a1.setAttribute('class', 'preview-a');
     a2.setAttribute('class', 'preview-a');
-    a1.setAttribute('src', '#');
-    a2.setAttribute('src', '#');
+    a1.setAttribute('href', card.linkliveversion);
+    a2.setAttribute('href', card.linksource);
     i1.setAttribute('class', 'fa-solid fa-power-off');
     i2.setAttribute('class', 'fa-brands fa-github');
     hr.setAttribute('class', 'preview-hr');
@@ -260,25 +260,27 @@ function popup() {
 
 window.onload = popup();
 
-burger.onclick = function () {
+burger.onclick = () => {
   navright.classList.toggle('click');
   document.body.style.overflow = 'hidden';
 };
 
-closeBtn.onclick = function () {
+closeBtn.onclick = () => {
   navright.classList.remove('click');
   document.body.style.overflow = 'visible';
 };
 
 navLink.forEach((link) => {
-  link.onclick = function () {
+  link.onclick = () => {
     navright.classList.remove('click');
     document.body.style.overflow = 'visible';
   };
 });
+
 const overLay = document.getElementById('overlay');
 const popUpcon = document.querySelectorAll('.pop-up-window');
 const projectBtn = document.querySelectorAll('.btn');
+
 projectBtn.forEach((projBtn, index) => {
   projBtn.addEventListener('click', () => {
     popUpcon[index].classList.add('active');
@@ -287,6 +289,7 @@ projectBtn.forEach((projBtn, index) => {
   });
 });
 const previewCloseBtn = document.querySelectorAll('.preview-close-btn');
+
 previewCloseBtn.forEach((close, index) => {
   close.addEventListener('click', () => {
     popUpcon[index].classList.remove('active');
@@ -306,8 +309,6 @@ overLay.addEventListener('click', () => {
 
 const formF = document.getElementById('formSubmit');
 const email = document.getElementById('email');
-// const suBmit = document.getElementById('submit');
-// const error = document.querySelector('#error-message');
 
 formF.addEventListener('submit', (ev) => {
   const error = document.getElementById('error-message');
