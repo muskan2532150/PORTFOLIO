@@ -194,6 +194,8 @@ function popup() {
     btn2.setAttribute('class', 'preview-body-btn');
     a1.setAttribute('class', 'preview-a');
     a2.setAttribute('class', 'preview-a');
+    a1.setAttribute('target', '_blank');
+    a2.setAttribute('target', '_blank');
     a1.setAttribute('href', card.linkliveversion);
     a2.setAttribute('href', card.linksource);
     i1.setAttribute('class', 'fa-solid fa-power-off');
