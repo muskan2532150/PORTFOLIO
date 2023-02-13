@@ -50,7 +50,6 @@
   top: 0;
   right: 0;
   background-color: rgb(237 241 255 / 81%);
-  
 }
 
 .header nav {
@@ -683,11 +682,10 @@ hr {
   }
 
   .language li,
-  .frame li {
+  .frame li,
+  .database li {
     flex-direction: column;
     margin-right: 20px;
-
-    /* height: 120px; */
     max-width: max-content;
   }
 

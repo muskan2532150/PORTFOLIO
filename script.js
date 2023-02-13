@@ -5,24 +5,24 @@ const navLink = document.querySelectorAll('.nav-link');
 
 const cardInfo = [
   {
-    name: 'FitMe-Up',
+    name: 'Web Development',
     label: 'Microverse',
-    list: ['FullStack', '2023'],
-    description: 'Fit me up frontend is a react-based application that enables a given user to book a trainer and it consumes an api defined in the project: Fit Me Up Backend. On top of this it also supports admin users to manage trainers that is creating and removing of the different trainers.',
-    featuredImage: 'images/FitME-up.png',
-    technologies: ['React', 'RubyOnRails', '', ''],
-    linkliveversion: 'https://fitmeup-trainers.netlify.app/',
-    linksource: 'https://github.com/killy10o10/FitMeUp',
+    list: ['FrontEnd', '2022'],
+    description: 'This website helps to search for information related to web development. It contains the roadmaps, sources, channels, and dept information such as language, tools, and other materials to enhance your coding skills.',
+    featuredImage: 'images/webdev.png',
+    technologies: ['HTML', 'CSS', 'JAVASCRIPT', ''],
+    linkliveversion: 'https://github.com/muskan2532150/Web-Development-Roadmap/',
+    linksource: 'https://muskan2532150.github.io/Web-Development-Roadmap/',
   },
   {
-    name: 'Budget-App',
+    name: 'LeaderBoard',
     label: 'Microverse',
-    list: ['Back-End', '2023'],
-    description: 'Budget App is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
-    featuredImage: 'images/Budget-App.png',
-    technologies: ['Bootstraps', 'RubyOnRAils', 'Nodejs', ''],
-    linkliveversion: 'https://budget-app-3fv5.onrender.com/',
-    linksource: 'https://github.com/muskan2532150/Budget-App',
+    list: ['Front-End', '2022'],
+    description: 'The leaderboard website displays scores submitted by different players. It allows you to submit your score. The scores are preserved in the external Leaderboard API services.',
+    featuredImage: 'images/leaderboard.png',
+    technologies: ['Bootstraps', 'HTML', 'CSS', 'JAVASCRIPT'],
+    linkliveversion: 'https://muskan2532150.github.io/LeaderBoard/dist/',
+    linksource: 'https://github.com/muskan2532150/LeaderBoard',
   },
   {
     name: 'Awesome Books',
@@ -43,6 +43,26 @@ const cardInfo = [
     technologies: ['Bootstraps', 'HTML', 'CSS', 'JAVASCRIPT'],
     linkliveversion: 'https://muskan2532150.github.io/Space-Travelers-Hub/',
     linksource: 'https://github.com/muskan2532150/Space-Travelers-Hub',
+  },
+  {
+    name: 'Budget-App',
+    label: 'Microverse',
+    list: ['Back-End', '2023'],
+    description: 'Budget App is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+    featuredImage: 'images/Budget-App.png',
+    technologies: ['Bootstraps', 'RubyOnRAils', 'Nodejs', ''],
+    linkliveversion: 'https://budget-app-3fv5.onrender.com/',
+    linksource: 'https://github.com/muskan2532150/Budget-App',
+  },
+  {
+    name: 'FitMe-Up',
+    label: 'Microverse',
+    list: ['FullStack', '2023'],
+    description: 'Fit me up frontend is a react-based application that enables a given user to book a trainer and it consumes an api defined in the project: Fit Me Up Backend. On top of this it also supports admin users to manage trainers that is creating and removing of the different trainers.',
+    featuredImage: 'images/FitME-up.png',
+    technologies: ['React', 'RubyOnRails', '', ''],
+    linkliveversion: 'https://fitmeup-trainers.netlify.app/',
+    linksource: 'https://github.com/killy10o10/FitMeUp',
   },
 ];
 
@@ -77,10 +97,10 @@ function popup() {
   <div class='card-body'>
       <h3 class='card-title'>${cardInfo[1].name}</h3>
       <div class='card-text'>
-          <h4>${cardInfo[0].label}</h4>
+          <h4>${cardInfo[1].label}</h4>
           <ul>
-              <li>${cardInfo[0].list[0]}</li>
-              <li>${cardInfo[0].list[1]}</li>
+              <li>${cardInfo[1].list[0]}</li>
+              <li>${cardInfo[1].list[1]}</li>
           </ul>
       </div>
       <p class='para'>
@@ -143,7 +163,58 @@ function popup() {
       <button class='btn' type='button'>See Project</button>
   </div>
   <div class='pop-up-window'></div>
-</div>`;
+</div>
+
+<div class='cards'>
+  <img src='${cardInfo[4].featuredImage}' class="img-fluid" alt='${cardInfo[4].name}'>
+  <div class='card-body'>
+      <h3 class='card-title'>${cardInfo[4].name}</h3>
+      <div class='card-text'>
+          <h4>${cardInfo[4].label}</h4>
+          <ul>
+              <li>${cardInfo[4].list[0]}</li>
+              <li>${cardInfo[4].list[1]}</li>
+          </ul>
+      </div>
+      <p class='para'>
+          A daily selection of privately personalized reads; no accounts or sign-ups required.
+      </p>
+      <ul>
+          <li class='list'>${cardInfo[4].technologies[0]}</li>
+          <li class='list'>${cardInfo[4].technologies[1]}</li>
+          <li class='list'>${cardInfo[4].technologies[2]}</li>
+      </ul>
+      <button class='btn' type='button'>See Project</button>
+  </div>
+  <div class='pop-up-window'></div>
+</div>
+
+<div class='cards-rev'>
+  <img src='${cardInfo[5].featuredImage}' alt='${cardInfo[5].name}' class="img-fluid">
+  <div class='card-body'>
+      <h3 class='card-title'>${cardInfo[5].name}</h3>
+      <div class='card-text'>
+          <h4>${cardInfo[5].label}</h4>
+          <ul>
+              <li>${cardInfo[5].list[0]}</li>
+              <li>${cardInfo[5].list[1]}</li>
+          </ul>
+      </div>
+      <p class='para'>
+          A daily selection of privately personalized reads; no accounts or sign-ups required.
+      </p>
+      <ul>
+          <li class='list'>${cardInfo[5].technologies[0]}</li>
+          <li class='list'>${cardInfo[5].technologies[1]}</li>
+          <li class='list'>${cardInfo[5].technologies[2]}</li>
+      </ul>
+      <button class='btn' type='button'>See Project</button>
+  </div>
+  <div class='pop-up-window'></div>
+</div>
+
+
+`;
   const popupcon = document.querySelectorAll('.pop-up-window');
   cardInfo.forEach((card, index) => {
     const h3 = document.createElement('h3');
