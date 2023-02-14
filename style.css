@@ -202,7 +202,7 @@ nav > ul {
   margin-bottom: 12px;
 }
 
-.preview-body-ul{
+.preview-body-ul {
   flex-wrap: wrap;
 }
 
@@ -391,11 +391,11 @@ hr {
 }
 
 /* Footer */
-.footer{
+.footer {
   display: flex;
-    gap: 2rem;
-    justify-content: space-around;
-    padding: 3px;
+  gap: 2rem;
+  justify-content: space-around;
+  padding: 3px;
 }
 
 /* Pop-up  */
