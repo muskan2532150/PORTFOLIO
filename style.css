@@ -30,6 +30,10 @@
   color: #6070ff;
 }
 
+.width {
+  min-width: 375px;
+}
+
 .header button,
 .preview-close-btn {
   background-color: transparent;
@@ -392,10 +396,14 @@ hr {
 
 /* Footer */
 .footer {
-  display: flex;
-  gap: 2rem;
-  justify-content: space-around;
-  padding: 3px;
+  display: grid;
+  grid: 25px / 25% 25% 40%;
+  gap: 1.3rem;
+  padding: 0.5rem;
+}
+
+.footer:last-child {
+  justify-self: flex-end;
 }
 
 /* Pop-up  */
