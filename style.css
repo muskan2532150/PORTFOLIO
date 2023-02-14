@@ -402,7 +402,7 @@ hr {
   padding: 0.5rem;
 }
 
-.footer:last-child {
+.footer-p {
   justify-self: flex-end;
 }
 
