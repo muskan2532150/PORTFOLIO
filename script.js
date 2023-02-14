@@ -8,11 +8,11 @@ const cardInfo = [
     name: 'Web Development',
     label: 'Microverse',
     list: ['FrontEnd', '2022'],
-    description: 'This website helps to search for information related to web development. It contains the roadmaps, sources, channels, and dept information such as language, tools, and other materials to enhance your coding skills.',
+    description: 'This website helps to search for information related to web development. It contains the roadmaps, sources, channels, and depth information such as language, tools, and other materials to enhance your coding skills.',
     featuredImage: 'images/webdev.png',
     technologies: ['HTML', 'CSS', 'JAVASCRIPT', 'Github'],
-    linkliveversion: 'https://github.com/muskan2532150/Web-Development-Roadmap/',
-    linksource: 'https://muskan2532150.github.io/Web-Development-Roadmap/',
+    linkliveversion: 'https://muskan2532150.github.io/Web-Development-Roadmap/',
+    linksource: 'https://github.com/muskan2532150/Web-Development-Roadmap/',
   },
   {
     name: 'LeaderBoard',
@@ -28,7 +28,7 @@ const cardInfo = [
     name: 'Awesome Books',
     label: 'Microverse',
     list: ['Front-End', '2022'],
-    description: 'A SPW(Single Page Website) that can track your books on your browser!',
+    description: ' An SPW(Single Page Website) that can track your books on your browser. This website shows a list of books and lets you add and remove books from that list.',
     featuredImage: 'images/Awesome-Books.png',
     technologies: ['Bootstrap', 'HTML', 'CSS', 'JAVASCRIPT'],
     linkliveversion: 'https://muskan2532150.github.io/Awesome_books/',
@@ -48,21 +48,11 @@ const cardInfo = [
     name: 'Budget-App',
     label: 'Microverse',
     list: ['Back-End', '2023'],
-    description: 'Budget App is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+    description: 'Budget App is about building a mobile web application where you can manage your budget:It has a list of transactions associated with a category so that you can see how much money you spent and on what.',
     featuredImage: 'images/Budget-App.png',
     technologies: ['Bootstrap', 'RubyOnRAils', 'Nodejs', 'Render'],
     linkliveversion: 'https://budget-app-3fv5.onrender.com/',
     linksource: 'https://github.com/muskan2532150/Budget-App',
-  },
-  {
-    name: 'FitMe-Up',
-    label: 'Microverse',
-    list: ['FullStack', '2023'],
-    description: 'Fit me up frontend is a react-based application that enables a given user to book a trainer and it consumes an api defined in the project: Fit Me Up Backend. On top of this it also supports admin users to manage trainers that is creating and removing of the different trainers.',
-    featuredImage: 'images/FitME-up.png',
-    technologies: ['React', 'RubyOnRails', 'Bootstrap', 'Render'],
-    linkliveversion: 'https://fitmeup-trainers.netlify.app/',
-    linksource: 'https://github.com/killy10o10/FitMeUp',
   },
 ];
 
@@ -188,32 +178,6 @@ function popup() {
   </div>
   <div class='pop-up-window'></div>
 </div>
-
-<div class='cards-rev'>
-  <img src='${cardInfo[5].featuredImage}' alt='${cardInfo[5].name}' class="img-fluid">
-  <div class='card-body'>
-      <h3 class='card-title'>${cardInfo[5].name}</h3>
-      <div class='card-text'>
-          <h4>${cardInfo[5].label}</h4>
-          <ul>
-              <li>${cardInfo[5].list[0]}</li>
-              <li>${cardInfo[5].list[1]}</li>
-          </ul>
-      </div>
-      <p class='para'>
-          A daily selection of privately personalized reads; no accounts or sign-ups required.
-      </p>
-      <ul>
-          <li class='list'>${cardInfo[5].technologies[0]}</li>
-          <li class='list'>${cardInfo[5].technologies[1]}</li>
-          <li class='list'>${cardInfo[5].technologies[2]}</li>
-      </ul>
-      <button class='btn' type='button'>See Project</button>
-  </div>
-  <div class='pop-up-window'></div>
-</div>
-
-
 `;
   const popupcon = document.querySelectorAll('.pop-up-window');
   cardInfo.forEach((card, index) => {
@@ -276,14 +240,14 @@ function popup() {
     const btnText = document.createTextNode(' \u00D7');
     const h4Text = document.createTextNode(card.label);
     const p1Text = document.createTextNode(card.description);
-    const a1Text = document.createTextNode('See Live');
-    const a2Text = document.createTextNode('See Source');
+    const btn1Text = document.createTextNode('See Live');
+    const btn2Text = document.createTextNode('See Source');
     h3.appendChild(h3Text);
     btn.appendChild(btnText);
     h4.appendChild(h4Text);
     p1.appendChild(p1Text);
-    a1.appendChild(a1Text);
-    a2.appendChild(a2Text);
+    btn1.appendChild(btn1Text);
+    btn2.appendChild(btn2Text);
     for (let i = 0; i < 2; i += 1) {
       const liText = document.createTextNode(card.list[i]);
       if (i === 0) {
@@ -310,10 +274,11 @@ function popup() {
         ul2.appendChild(li14);
       }
     }
-    btn1.appendChild(a1);
-    btn2.appendChild(a2);
+
     btn1.appendChild(i1);
     btn2.appendChild(i2);
+    a1.appendChild(btn1);
+    a2.appendChild(btn2);
     div0.appendChild(h3);
     div0.appendChild(btn);
     div1.appendChild(h4);
@@ -321,8 +286,8 @@ function popup() {
     div2.appendChild(p1);
     div3.appendChild(ul2);
     div3.appendChild(hr);
-    div3.appendChild(btn1);
-    div3.appendChild(btn2);
+    div3.appendChild(a1);
+    div3.appendChild(a2);
     div2.appendChild(div3);
     popupcon[index].appendChild(div0);
     popupcon[index].appendChild(div1);

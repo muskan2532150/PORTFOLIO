@@ -202,6 +202,10 @@ nav > ul {
   margin-bottom: 12px;
 }
 
+.preview-body-ul{
+  flex-wrap: wrap;
+}
+
 .list,
 .preview-body-li {
   list-style: none;
@@ -384,6 +388,14 @@ hr {
   background: #fff;
   border: 1px solid #7f8cff;
   border-radius: 8px;
+}
+
+/* Footer */
+.footer{
+  display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    padding: 3px;
 }
 
 /* Pop-up  */
