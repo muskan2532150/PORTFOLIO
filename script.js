@@ -69,9 +69,6 @@ function popup() {
               <li>${cardInfo[0].list[1]}</li>
           </ul>
       </div>
-      <p class='para'>
-          A daily selection of privately personalized reads; no accounts or sign-ups required.
-      </p>
       <ul>
           <li class='list'>${cardInfo[0].technologies[0]}</li>
           <li class='list'>${cardInfo[0].technologies[1]}</li>
@@ -93,9 +90,6 @@ function popup() {
               <li>${cardInfo[1].list[1]}</li>
           </ul>
       </div>
-      <p class='para'>
-          A daily selection of privately personalized reads; no accounts or sign-ups required.
-      </p>
       <ul>
           <li class='list'>${cardInfo[1].technologies[0]}</li>
           <li class='list'>${cardInfo[1].technologies[1]}</li>
@@ -117,9 +111,6 @@ function popup() {
               <li>${cardInfo[2].list[1]}</li>
           </ul>
       </div>
-      <p class='para'>
-          A daily selection of privately personalized reads; no accounts or sign-ups required.
-      </p>
       <ul>
           <li class='list'>${cardInfo[2].technologies[0]}</li>
           <li class='list'>${cardInfo[2].technologies[1]}</li>
@@ -142,9 +133,6 @@ function popup() {
               <li>${cardInfo[3].list[1]}</li>
           </ul>
       </div>
-      <p class='para'>
-          A daily selection of privately personalized reads; no accounts or sign-ups required.
-      </p>
       <ul>
           <li class='list'>${cardInfo[3].technologies[0]}</li>
           <li class='list'>${cardInfo[3].technologies[1]}</li>
@@ -166,9 +154,6 @@ function popup() {
               <li>${cardInfo[4].list[1]}</li>
           </ul>
       </div>
-      <p class='para'>
-          A daily selection of privately personalized reads; no accounts or sign-ups required.
-      </p>
       <ul>
           <li class='list'>${cardInfo[4].technologies[0]}</li>
           <li class='list'>${cardInfo[4].technologies[1]}</li>
